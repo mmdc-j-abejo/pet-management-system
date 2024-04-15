@@ -19,9 +19,9 @@
 Please read the guide comments for each class for you to move forward!
 
 ### Constraints
-* You can create another classes if that will help you solve this problem
+* You can create additional classes if that will help you solve this problem
 * This is good for 2 hours
-* It's up to you how many kinds of Pet do you want!
+* It's up to you how many kinds of Pet you want!
 
 ### Desired Outputs
 
