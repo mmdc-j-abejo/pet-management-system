@@ -3,6 +3,9 @@
 ## Authors
 * Tristan Mahinay, JUG Leader, Java User Group Philippines
 
+## Reviewers
+* Jansen Ang, JUG Leader, Java User Group Philippines
+
 ### Environment Instructions
 * Install Git
 * Players should install Java 17 in their machines
