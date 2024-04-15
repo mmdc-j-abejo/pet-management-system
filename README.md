@@ -3,7 +3,7 @@
 ## Authors
 * Tristan Mahinay, JUG Leader, Java User Group Philippines
 
-## Reviewers
+## Reviewed and Updated By
 * Jansen Ang, JUG Leader, Java User Group Philippines
 
 ### Environment Instructions
@@ -30,7 +30,7 @@ Please read the guide comments for each class for you to move forward!
 ### Desired Outputs
 
 * Print all the <b>name</b> of the owners together with the <b>name and type</b> of their pets
-* Print the behaviors of your Pets (aka Polymorphism!)
+* Print all the behaviors of each of the owners' pets 
 
 
 
