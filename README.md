@@ -30,7 +30,8 @@ Please read the guide comments for each class for you to move forward!
 ### Desired Outputs
 
 * Print all the <b>name</b> of the owners together with the <b>name and type</b> of their pets
-* Print all the behaviors of each of the owners' pets 
+* Print all the behaviors of each of the owners' pets
+* Bonus points if you can create a simple user interface in the console for interactive management of the pet system.
 
 
 
