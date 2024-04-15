@@ -1,6 +1,6 @@
 # SYNTAX Malolos Java Machine Problem
 
-## Authors
+## Authored by
 * Tristan Mahinay, JUG Leader, Java User Group Philippines
 
 ## Reviewed and Updated By
