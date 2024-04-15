@@ -1,6 +1,6 @@
 /**
  * MIT License
- * Copyright (c) 2024 Tristan Mahinay
+ * Copyright (c) 2024 Jansen Ang
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  * <p>
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -9,17 +9,10 @@
  * <p>
  * pet-management-system
  *
- * @author rjtmahinay
+ * @author jmgang
  * 2024
  */
-package com.jugph.contest.domain;
+package com.jugph.contest.behaviors;
 
-// This is a generic Pet
-public abstract class Pet {
-
-    // A pet can have a name, type and mood state (Sad, Happy, Hungry). These attributes can be inheritable.
-
-    abstract void talk();
-
-    abstract void walk();
+public interface Feedable {
 }
