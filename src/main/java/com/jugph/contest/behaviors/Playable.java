@@ -15,4 +15,5 @@
 package com.jugph.contest.behaviors;
 
 public interface Playable {
+    void Play(String play);
 }

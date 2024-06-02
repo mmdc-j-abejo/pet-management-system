@@ -14,12 +14,40 @@
  */
 package com.jugph.contest.domain;
 
+import com.jugph.contest.behaviors.Feedable;
+import com.jugph.contest.behaviors.Playable;
+
 // This is a generic Pet
-public abstract class Pet {
+public abstract class Pet implements Feedable, Playable {
 
     // A pet can have a name, type and mood state (Sad, Happy, Hungry). These attributes can be inheritable.
+    private String name;
+    private Type type;
+    private State hungry;
+
+    public enum Type {
+        DOG,
+        CAT,
+        RABBIT,
+        PARROT,
+        TURTLE,
+        HAMSTER,
+        FISH,
+        MOUSE,
+        GUINEA_PIG
+    }
+
+    private enum State{
+        SAD,
+        HAPPY,
+        HUNGRY
+    }
 
     abstract void talk();
 
     abstract void walk();
+
+    public Type getType() {
+        return type;
+    }
 }

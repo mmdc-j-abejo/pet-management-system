@@ -14,5 +14,8 @@
  */
 package com.jugph.contest.behaviors;
 
+import com.jugph.contest.domain.Food;
+
 public interface Feedable {
+    String food(Food food);
 }

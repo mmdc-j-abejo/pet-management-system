@@ -14,10 +14,31 @@
  */
 package com.jugph.contest.manager;
 
+import com.jugph.contest.domain.Owner;
+import com.jugph.contest.domain.Pet;
+
+import java.util.ArrayList;
+
 public class PetManager {
 
-
     // Add an owner
-
+    private Owner owner;
     // Add a pet to an owner
+    private ArrayList<Pet> ownerPets;
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
+    public ArrayList<Pet> getOwnerPets() {
+        return ownerPets;
+    }
+
+    public void setOwnerPets(ArrayList<Pet> ownerPets) {
+        this.ownerPets = ownerPets;
+    }
 }

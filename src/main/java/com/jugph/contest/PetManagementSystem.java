@@ -14,6 +14,8 @@
  */
 package com.jugph.contest;
 
+import com.jugph.contest.manager.PetManager;
+
 public class PetManagementSystem {
 
     public static void main(String[] args) {
@@ -22,5 +24,7 @@ public class PetManagementSystem {
          * This is the main class. This will be used for printing the results.
          */
 
+        PetManager petManager = new PetManager();
+        System.out.println("HEllo");
     }
 }

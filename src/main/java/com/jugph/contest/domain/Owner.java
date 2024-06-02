@@ -14,7 +14,41 @@
  */
 package com.jugph.contest.domain;
 
+import java.util.ArrayList;
+
 public class Owner {
 
     // Add attributes/methods of an Owner. The owner can own many pets
+    private String owner;
+    private Gender gender;
+    private ArrayList<Pet> petArrayList;
+
+    public enum Gender{
+        MALE,
+        FEMALE
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public ArrayList<Pet> getPetArrayList() {
+        return petArrayList;
+    }
+
+    public void setPetArrayList(ArrayList<Pet> petArrayList) {
+        this.petArrayList = petArrayList;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
 }
