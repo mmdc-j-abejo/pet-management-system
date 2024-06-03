@@ -38,7 +38,54 @@ public class PetManager {
         return ownerPets;
     }
 
-    public void setOwnerPets(ArrayList<Pet> ownerPets) {
+    public void setPets(ArrayList<Pet> ownerPets) {
         this.ownerPets = ownerPets;
+    }
+    public void displayPets() {
+        int ownerNumberOfPets = this.ownerPets.size();
+        if (ownerNumberOfPets == 0) {
+            System.out.println("------------------------------------------------------");
+            System.out.println("                     NO PETS FOUND                   -");
+            System.out.println("------------------------------------------------------");
+        }
+        else if (ownerNumberOfPets == 1) {
+            System.out.println(
+                    "Name: "+this.getOwnerPets().get(0).getName()+ "\n"+
+                    "Type: "+this.getOwnerPets().get(0).getType()+ "\n"+
+                    "State: "+this.getOwnerPets().get(0).getState()
+            );
+        }
+
+        else {
+            System.out.println("------------------------------------------------------");
+            System.out.println("|                 PETS INFORMATION                   |");
+            System.out.println("------------------------------------------------------");
+
+            System.out.println("------------------------------------------------------");
+            System.out.printf("| %-20s | %-10s | %-20s |\n", "Name", "Type", "State");
+            System.out.println("------------------------------------------------------");
+            for (Pet pet : this.ownerPets) {
+                System.out.printf("| %-20s | %-10s | %-14s |\n", pet.getName(), pet.getType(), pet.getState());
+            }
+            System.out.println("------------------------------------------------------");
+        }
+
+    }
+    public void start() {
+        System.out.println("------------------------------------------------------");
+        System.out.println("-              Pet Manager Start                     -");
+        System.out.println("------------------------------------------------------");
+
+    }
+    public void displayOwner() {
+        System.out.println("------------------------------------------------------");
+        System.out.printf("| %-50s |\n", "Owner     : " + this.getOwner().getOwnerName());
+        System.out.println("------------------------------------------------------");
+    }
+
+    public void close() {
+        System.out.println("------------------------------------------------------");
+        System.out.println("-              Pet Manager End                       -");
+        System.out.println("------------------------------------------------------");
     }
 }

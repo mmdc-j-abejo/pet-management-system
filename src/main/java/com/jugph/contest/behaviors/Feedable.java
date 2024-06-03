@@ -14,8 +14,9 @@
  */
 package com.jugph.contest.behaviors;
 
-import com.jugph.contest.domain.Food;
+
+import com.jugph.contest.domain.Pet;
 
 public interface Feedable {
-    String food(Food food);
+    Pet.Food feed();
 }

@@ -14,7 +14,13 @@
  */
 package com.jugph.contest;
 
+import com.jugph.contest.domain.Owner;
+import com.jugph.contest.domain.Pet;
 import com.jugph.contest.manager.PetManager;
+import com.jugph.contest.pets.Cat;
+import com.jugph.contest.pets.Dog;
+
+import java.util.ArrayList;
 
 public class PetManagementSystem {
 
@@ -24,7 +30,69 @@ public class PetManagementSystem {
          * This is the main class. This will be used for printing the results.
          */
 
+        /**
+         * The owner of the primary pets is Jomari
+         */
+
+        Owner owner = new Owner();
+        owner.setOwner("Jomari Abejo");
+        owner.setGender(Owner.Gender.MALE);
+
+        /**
+         * My First Pet
+         */
+
+        String primaryPetName = "Blackie";
+        Pet.State primaryPetState = Pet.State.HAPPY;
+
+        Dog primaryPet = new Dog(
+                primaryPetName,
+                primaryPetState,
+                Pet.Type.DOG){
+        };
+
+        /**
+         * My Secondary Pet
+         */
+
+        String secondaryPetName = "Salem";
+        Pet.State secondaryPetState = Pet.State.SAD;
+
+        Cat secondaryPet = new Cat(
+                secondaryPetName,
+                secondaryPetState,
+                Pet.Type.CAT) {
+        };
+
+        ArrayList<Pet> ownerPets = new ArrayList<Pet>();
+        ownerPets.add(primaryPet);
+        ownerPets.add(secondaryPet);
+
+
         PetManager petManager = new PetManager();
-        System.out.println("HEllo");
+        petManager.setOwner(owner);
+        petManager.setPets(ownerPets);
+
+
+        /**
+         * The owner of the primary pets is AJ
+         */
+
+
+        ArrayList<PetManager> petManagers = new ArrayList<PetManager>();
+        petManagers.add(petManager);
+
+
+        // Display All owner with their pets
+        petManagers.stream().forEach
+        (
+            petOwner ->
+            {
+                petManager.start();
+                petOwner.displayOwner();
+                petOwner.displayPets();
+                petManager.close();
+            }
+        );
     }
 }

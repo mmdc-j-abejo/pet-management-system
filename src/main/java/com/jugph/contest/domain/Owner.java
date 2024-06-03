@@ -23,12 +23,21 @@ public class Owner {
     private Gender gender;
     private ArrayList<Pet> petArrayList;
 
+    public Owner() {
+    }
+
+    public Owner(String owner, Gender gender, ArrayList<Pet> petArrayList) {
+        this.owner = owner;
+        this.gender = gender;
+        this.petArrayList = petArrayList;
+    }
+
     public enum Gender{
         MALE,
         FEMALE
     }
 
-    public String getOwner() {
+    public String getOwnerName() {
         return owner;
     }
 
